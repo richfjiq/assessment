@@ -10,9 +10,9 @@ const navigation = [
 
 const navigationModalMenu = [
   { name: 'Home', href: '#' },
-  { name: 'Football Tickets', href: '#' },
-  { name: 'Music Tickets', href: '#' },
-  { name: 'More', href: '#' },
+  { name: 'Football Tickets 2', href: '#' },
+  { name: 'Music Tickets 2', href: '#' },
+  { name: 'More 2', href: '#' },
   { name: 'About Us', href: '#' },
   { name: 'FAQ', href: '#' },
   { name: 'Terms of Use', href: '#' },
@@ -80,7 +80,7 @@ const Hero = () => {
 
             <ul className="hidden md:flex ml-[20px] items-center">
               {navigation.map((item) => (
-                <div className="group">
+                <div className="group" key={item.name}>
                   <li
                     className={
                       item.name === 'More' ? 'hidden min-[1090px]:block' : ''
@@ -90,7 +90,6 @@ const Hero = () => {
                       id="dropdownHoverButton"
                       data-dropdown-toggle="dropdownHover"
                       data-dropdown-trigger="hover"
-                      key={item.name}
                       href={item.href}
                       className="text-sm font-normal leading-6 text-gray-400 flex items-center px-4"
                     >
@@ -104,9 +103,9 @@ const Hero = () => {
                       >
                         <path
                           stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
                           d="m1 1 4 4 4-4"
                         />
                       </svg>
@@ -180,9 +179,9 @@ const Hero = () => {
               >
                 <path
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   d="m1 1 4 4 4-4"
                 />
               </svg>
@@ -244,18 +243,17 @@ const Hero = () => {
                         return <hr />;
                       }
                     };
-                    console.log({ index });
+
                     return (
-                      <>
+                      <div key={item.name}>
                         <a
-                          key={item.name}
                           href={item.href}
                           className="-mx-3 block rounded-lg px-3 py-2 text-xl font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                         >
                           {item.name}
                         </a>
                         {renderDivider()}
-                      </>
+                      </div>
                     );
                   })}
                 </div>
@@ -293,9 +291,9 @@ const Hero = () => {
               >
                 <path
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
                 />
               </svg>
@@ -319,6 +317,7 @@ const Hero = () => {
           {sponsors.map((sponsor) => (
             <img
               className="grayscale h-[25px] mx-[16px]"
+              key={sponsor.name}
               src={sponsor.ulr}
               alt={sponsor.name}
             />
