@@ -1,4 +1,10 @@
-import { Categories, Hero, OurMission } from './components';
+import {
+  Categories,
+  Footer,
+  HappyCustomers,
+  Hero,
+  OurMission,
+} from './components';
 
 const App = () => {
   return (
@@ -10,6 +16,8 @@ const App = () => {
         <Categories title="Top Football Matches" />
         <Categories title="Top Artists" />
         <OurMission />
+        <HappyCustomers />
+        <Footer />
       </div>
     </div>
   );
