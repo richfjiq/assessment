@@ -7,3 +7,13 @@
   margin: 0;
   padding: 0;
 }
+
+.clipPath {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+}
+
+@media screen and (min-width: 960px) {
+  .clipPath {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
