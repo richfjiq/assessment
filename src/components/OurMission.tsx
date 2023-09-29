@@ -43,7 +43,7 @@ export default function Example() {
             </div>
             <div className="mt-0 md:mt-[70px]">
               {incentives.map((incentive) => (
-                <>
+                <div key={incentive.name}>
                   <div
                     key={incentive.name}
                     className="flex flex-col md:flex-row mt-10 mb-0 md:mb-8"
@@ -65,7 +65,7 @@ export default function Example() {
                     </div>
                   </div>
                   <hr className="md:hidden mt-20" />
-                </>
+                </div>
               ))}
             </div>
           </div>

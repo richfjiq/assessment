@@ -4,8 +4,8 @@ const testimonials = [
   {
     body: 'Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.',
     author: {
-      name: 'Leslie Alexander',
-      handle: 'lesliealexander',
+      name: 'Leslie Alexander 1',
+      handle: 'lesliealexander1',
       imageUrl:
         'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
       rating: 4.5,
@@ -14,8 +14,8 @@ const testimonials = [
   {
     body: 'Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.',
     author: {
-      name: 'Leslie Alexander',
-      handle: 'lesliealexander',
+      name: 'Leslie Alexander 2',
+      handle: 'lesliealexander2',
       imageUrl:
         'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
       rating: 4,
@@ -24,8 +24,8 @@ const testimonials = [
   {
     body: 'Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.',
     author: {
-      name: 'Leslie Alexander',
-      handle: 'lesliealexander',
+      name: 'Leslie Alexander 3',
+      handle: 'lesliealexander3',
       imageUrl:
         'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
       rating: 5,
@@ -34,8 +34,8 @@ const testimonials = [
   {
     body: 'Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.',
     author: {
-      name: 'Leslie Alexander',
-      handle: 'lesliealexander',
+      name: 'Leslie Alexander 4',
+      handle: 'lesliealexander4',
       imageUrl:
         'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
       rating: 4.5,
@@ -44,8 +44,8 @@ const testimonials = [
   {
     body: 'Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.',
     author: {
-      name: 'Leslie Alexander',
-      handle: 'lesliealexander',
+      name: 'Leslie Alexander 5',
+      handle: 'lesliealexander5',
       imageUrl:
         'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
       rating: 4.8,
@@ -54,8 +54,8 @@ const testimonials = [
   {
     body: 'Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.',
     author: {
-      name: 'Leslie Alexander',
-      handle: 'lesliealexander',
+      name: 'Leslie Alexander 6',
+      handle: 'lesliealexander6',
       imageUrl:
         'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
       rating: 5,
@@ -64,8 +64,8 @@ const testimonials = [
   {
     body: 'Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.',
     author: {
-      name: 'Leslie Alexander',
-      handle: 'lesliealexander',
+      name: 'Leslie Alexander 7',
+      handle: 'lesliealexander7',
       imageUrl:
         'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
       rating: 4.5,
@@ -74,8 +74,8 @@ const testimonials = [
   {
     body: 'Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.',
     author: {
-      name: 'Leslie Alexander',
-      handle: 'lesliealexander',
+      name: 'Leslie Alexander 8',
+      handle: 'lesliealexander8',
       imageUrl:
         'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
       rating: 4.8,
