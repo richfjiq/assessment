@@ -63,7 +63,7 @@ const Hero = () => {
         >
           <div className="flex">
             <div className="flex">
-              <a href="#" className="-m-1.5 p-1.5">
+              <a href="#" className="m-1.5 p-1.5">
                 <span className="sr-only">SeatPick Company</span>
                 <img
                   className="h-8 w-[100px] md:hidden"
@@ -78,39 +78,80 @@ const Hero = () => {
               </a>
             </div>
 
-            <ul className="hidden md:flex ml-[20px]">
+            <ul className="hidden md:flex ml-[20px] items-center">
               {navigation.map((item) => (
-                <li
-                  className={
-                    item.name === 'More' ? 'hidden min-[1090px]:block' : ''
-                  }
-                >
-                  <a
-                    id="dropdownHoverButton"
-                    data-dropdown-toggle="dropdownHover"
-                    data-dropdown-trigger="hover"
-                    key={item.name}
-                    href={item.href}
-                    className="text-sm font-normal leading-6 text-gray-400 flex items-center px-4"
+                <div className="group">
+                  <li
+                    className={
+                      item.name === 'More' ? 'hidden min-[1090px]:block' : ''
+                    }
                   >
-                    {item.name}
-                    <svg
-                      className="w-2.5 h-2.5 ml-2.5"
-                      aria-hidden="true"
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 10 6"
+                    <a
+                      id="dropdownHoverButton"
+                      data-dropdown-toggle="dropdownHover"
+                      data-dropdown-trigger="hover"
+                      key={item.name}
+                      href={item.href}
+                      className="text-sm font-normal leading-6 text-gray-400 flex items-center px-4"
                     >
-                      <path
-                        stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="m1 1 4 4 4-4"
-                      />
-                    </svg>
-                  </a>
-                </li>
+                      {item.name}
+                      <svg
+                        className="w-2.5 h-2.5 ml-2.5"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 10 6"
+                      >
+                        <path
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="m1 1 4 4 4-4"
+                        />
+                      </svg>
+                    </a>
+
+                    <div className="absolute p-4 w-[200px] top-[60px] hidden group-hover:md:flex group-hover:md:flex-col hover:md:flex bg-white pt-2 pb-2 rounded-lg shadow-lg border border-[#e2e2e2]">
+                      <a
+                        href="#"
+                        className="text-sm font-normal leading-6 text-gray-400"
+                      >
+                        Link 1
+                      </a>
+                      <a
+                        href="#"
+                        className="text-sm font-normal leading-6 text-gray-400"
+                      >
+                        Link 2
+                      </a>
+                      <a
+                        href="#"
+                        className="text-sm font-normal leading-6 text-gray-400"
+                      >
+                        Link 3
+                      </a>
+                      <a
+                        href="#"
+                        className="text-sm font-normal leading-6 text-gray-400"
+                      >
+                        Link 4
+                      </a>
+                      <a
+                        href="#"
+                        className="text-sm font-normal leading-6 text-gray-400"
+                      >
+                        Link 5
+                      </a>
+                      <a
+                        href="#"
+                        className="text-sm font-normal leading-6 text-gray-400"
+                      >
+                        Link 6
+                      </a>
+                    </div>
+                  </li>
+                </div>
               ))}
             </ul>
           </div>
@@ -124,7 +165,7 @@ const Hero = () => {
               <Bars3Icon className="h-8 w-8 text-white" aria-hidden="true" />
             </button>
           </div>
-          <div className="hidden md:flex justify-end items-center">
+          <div className="hidden md:flex justify-end items-center group">
             <a
               href="#"
               className="flex items-center text-sm font-normal leading-6 text-gray-400"
@@ -146,6 +187,26 @@ const Hero = () => {
                 />
               </svg>
             </a>
+            <div className="absolute text-center p-4 w-[100px] top-[60px] hidden group-hover:md:flex group-hover:md:flex-col hover:md:flex bg-white pt-2 pb-2 rounded-lg shadow-lg border border-[#e2e2e2]">
+              <a
+                href="#"
+                className="text-sm font-normal leading-6 text-gray-400"
+              >
+                € EUR
+              </a>
+              <a
+                href="#"
+                className="text-sm font-normal leading-6 text-gray-400"
+              >
+                £ GBP
+              </a>
+              <a
+                href="#"
+                className="text-sm font-normal leading-6 text-gray-400"
+              >
+                $ USD
+              </a>
+            </div>
           </div>
         </nav>
         <Dialog

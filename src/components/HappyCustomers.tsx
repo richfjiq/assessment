@@ -90,7 +90,7 @@ const HappyCustomers = () => {
         <div className="w-full text-center mb-4">
           <h2 className="text-[30px] font-semibold">Happy Costumers</h2>
         </div>
-        <div className="box-content flex overflow-x-scroll gap-4">
+        <div className="box-content flex overflow-x-scroll gap-4 no-scrollbar">
           {testimonials.map((testimonial) => (
             <div
               key={testimonial.author.handle}

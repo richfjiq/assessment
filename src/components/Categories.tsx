@@ -5,61 +5,61 @@ const categories = [
     name: 'New Arrivals',
     href: '#',
     imageSrc:
-      'https://tailwindui.com/img/ecommerce-images/home-page-01-category-01.jpg',
+      'https://res.cloudinary.com/dfwt0gh29/image/upload/w_350,h_190,c_fill,f_auto,q_auto/v1513862176/606d24be-8ead-40aa-a622-22e5dfd02375_581101_TABLET_LANDSCAPE_LARGE_16_9',
   },
   {
     name: 'Productivity',
     href: '#',
     imageSrc:
-      'https://tailwindui.com/img/ecommerce-images/home-page-01-category-02.jpg',
+      'https://res.cloudinary.com/dfwt0gh29/image/upload/w_350,h_190,c_fill,f_auto,q_auto/v1513862176/a422c329-c1b9-4bc4-8a3d-7fd470db7888_515151_TABLET_LANDSCAPE_LARGE_16_9',
   },
   {
     name: 'Workspace',
     href: '#',
     imageSrc:
-      'https://tailwindui.com/img/ecommerce-images/home-page-01-category-04.jpg',
+      'https://res.cloudinary.com/dfwt0gh29/image/upload/w_350,h_190,c_fill,f_auto,q_auto/v1513862176/Manchester_United_Panorama__8051523746_vkolvf',
   },
   {
     name: 'Accessories',
     href: '#',
     imageSrc:
-      'https://tailwindui.com/img/ecommerce-images/home-page-01-category-05.jpg',
+      'https://res.cloudinary.com/dfwt0gh29/image/upload/w_350,h_190,c_fill,f_auto,q_auto/v1513862176/Stamford_Bridge_-_West_Stand_w9f9hj',
   },
   {
     name: 'Sale',
     href: '#',
     imageSrc:
-      'https://tailwindui.com/img/ecommerce-images/home-page-01-category-03.jpg',
+      'https://res.cloudinary.com/dfwt0gh29/image/upload/w_350,h_190,c_fill,f_auto,q_auto/v1513862176/02b00cfc-6280-4104-a0de-c6ff95630733_224841_TABLET_LANDSCAPE_16_9',
   },
   {
     name: 'New Arrival',
     href: '#',
     imageSrc:
-      'https://tailwindui.com/img/ecommerce-images/home-page-01-category-01.jpg',
+      'https://res.cloudinary.com/dfwt0gh29/image/upload/w_350,h_190,c_fill,f_auto,q_auto/v1513862176/6b4c86dd-b18f-48de-89ee-c9bff5da7f14_614411_TABLET_LANDSCAPE_LARGE_16_9',
   },
   {
     name: 'Product',
     href: '#',
     imageSrc:
-      'https://tailwindui.com/img/ecommerce-images/home-page-01-category-02.jpg',
+      'https://res.cloudinary.com/dfwt0gh29/image/upload/w_350,h_190,c_fill,f_auto,q_auto/v1513862176/Emirates_Stadium_-_East_side_-_Composite_fit0wv',
   },
   {
     name: 'Workspaces',
     href: '#',
     imageSrc:
-      'https://tailwindui.com/img/ecommerce-images/home-page-01-category-04.jpg',
+      'https://res.cloudinary.com/dfwt0gh29/image/upload/w_350,h_190,c_fill,f_auto,q_auto/v1513862176/b6bb7f66-191e-41e2-a6a1-6591e00a13cb_882011_TABLET_LANDSCAPE_LARGE_16_9',
   },
   {
     name: 'Accessory',
     href: '#',
     imageSrc:
-      'https://tailwindui.com/img/ecommerce-images/home-page-01-category-05.jpg',
+      'https://res.cloudinary.com/dfwt0gh29/image/upload/w_350,h_190,c_fill,f_auto,q_auto/v1513862176/4799596d-6031-4c02-9578-427502422dc8_847581_TABLET_LANDSCAPE_LARGE_16_9',
   },
   {
     name: 'Sales',
     href: '#',
     imageSrc:
-      'https://tailwindui.com/img/ecommerce-images/home-page-01-category-03.jpg',
+      'https://res.cloudinary.com/dfwt0gh29/image/upload/w_350,h_190,c_fill,f_auto,q_auto/v1513862176/Stadium_Pictures/La_Liga/Sevilla2-1Lega2017',
   },
 ];
 
@@ -84,35 +84,21 @@ const Categories: FC<Props> = ({ title }) => {
           </a>
         </div>
 
-        <div className="mt-4 flow-root">
-          <div className="-my-2">
-            <div className="relative box-content h-[114px] md:h-[162px] overflow-x-auto py-2 xl:overflow-visible">
-              <div className="absolute flex space-x-4 px-4 sm:px-6 lg:px-8 xl:relative">
-                {categories.map((category) => (
-                  <a
-                    key={category.name}
-                    href={category.href}
-                    className="relative flex h-[114px] md:h-[162px] w-[141px] md:w-[256px] flex-col overflow-hidden rounded-lg p-6 hover:opacity-75 xl:w-auto"
-                  >
-                    <span aria-hidden="true" className="absolute inset-0">
-                      <img
-                        src={category.imageSrc}
-                        alt=""
-                        className="h-full w-full object-cover object-center"
-                      />
-                    </span>
-                    <span
-                      aria-hidden="true"
-                      className="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-gray-800 opacity-50"
-                    />
-                    <span className="relative mt-auto text-center text-xl font-semibold text-white">
-                      {category.name}
-                    </span>
-                  </a>
-                ))}
+        <div className="w-full flex overflow-x-scroll gap-4 no-scrollbar mt-[10px]">
+          {categories.map((category) => (
+            <div key={category.name} className="">
+              <div className="w-[141px] md:w-[260px] border-2 border-[#e2e2e2] rounded-md">
+                <img
+                  src={category.imageSrc}
+                  alt={category.name}
+                  className="w-[141px] md:w-[260px] h-[114px] md:h-[162px] rounded-md object-cover"
+                />
+              </div>
+              <div className="p-2">
+                <p className="font-medium font-base">{category.name}</p>
               </div>
             </div>
-          </div>
+          ))}
         </div>
       </div>
     </div>
