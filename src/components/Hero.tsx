@@ -43,7 +43,7 @@ const Hero = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <div className="clipPath bg-[#003BDE] h-[355px] md:bg-white md:h-auto">
+    <div className="clipPath bg-[#003BDE] h-[355px] md:bg-white md:h-auto mb-10">
       <header className="max-w-[1200px] w-full mx-auto absolute inset-x-0 top-0 z-50">
         <nav
           className="w-full flex justify-between py-5 px-[16px] md:px-16"
